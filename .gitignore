@@ -1,0 +1,40 @@
+# ---- generated data, caches and results: never committed -------------
+cache/
+runs/
+local/
+inventory_full/
+evidence/
+*.npz
+*.pkl
+*.edf
+*.bdf
+predictions.csv
+results.json
+splits.json
+
+# ---- environments and editor state -----------------------------------
+.venv/
+.vscode/
+.idea/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# ---- code only: no manuscript, no prose documentation ----------------
+paper/
+docs/
+*.md
+!README.md
+*.tex
+*.cls
+*.bib
+*.pdf
+*.aux
+*.log
+*.out
+*.synctex.gz
+
+# ---- OS ---------------------------------------------------------------
+.DS_Store
+Thumbs.db

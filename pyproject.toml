@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "eegstudy-repo1"
+version = "0.2.0"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "scipy>=1.11,<2", "scikit-learn>=1.4,<2"]
+[project.optional-dependencies]
+io = ["mne>=1.7,<2"]
+[project.scripts]
+eegstudy = "eegstudy.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]

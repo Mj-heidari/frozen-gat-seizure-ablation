@@ -1,0 +1,49 @@
+{
+  "study": "chb",
+  "root": "D:\\CHB_MIT\\BIDS_CHB-MIT\\BIDS_CHB-MIT",
+  "fs": 128,
+  "channels": [
+    "FP1-F7",
+    "F7-T7",
+    "T7-P7",
+    "P7-O1",
+    "FP1-F3",
+    "F3-C3",
+    "C3-P3",
+    "P3-O1",
+    "FZ-CZ",
+    "CZ-PZ",
+    "FP2-F4",
+    "F4-C4",
+    "C4-P4",
+    "P4-O2",
+    "FP2-F8",
+    "F8-T8",
+    "T8-P8",
+    "P8-O2"
+  ],
+  "channel_aliases": {
+    "F7-T3": "F7-T7",
+    "T3-T5": "T7-P7",
+    "T5-O1": "P7-O1",
+    "F8-T4": "F8-T8",
+    "T4-T6": "T8-P8",
+    "T6-O2": "P8-O2"
+  },
+  "manifest": "local/manifest.csv",
+  "labels": "local/labels.csv",
+  "cache": "cache",
+  "max_cache_bytes": 2500000000,
+  "max_source_bytes": 8000000000,
+  "seed": 41,
+  "folds": 5,
+  "max_epochs_hbn": 12,
+  "seizure_column": "eventType",
+  "seizure_values": [
+    "sz"
+  ],
+  "hbn_task": "REVIEW_REQUIRED",
+  "label_definition": "Fully ictal 4 s window = 1; fully non-ictal = 0; partially overlapping windows discarded",
+  "allow_missing_channels": false,
+  "montage_note": "CHB-MIT mixes 10-20 and 10-10 nomenclature. T3/T4/T5/T6 are the legacy names for T7/T8/P7/P8; the six aliases rename identical physical bipolar derivations and add no synthetic channels."
+}
